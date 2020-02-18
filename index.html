@@ -165,7 +165,7 @@
 								<li>Continuously update users and admins on repairs and maintenances while keeping them clear and concise</li>
 							</ul>
 
-							Now that it is out of the way, it’s time to design the greatest app ever... <i>in my eyes</i>.
+							Now that it is out of the way, it’s time to design my app.
 							</p>
 
 						</div>
@@ -176,7 +176,7 @@
 					<section class="wrapper style1 align-center ">
 						<div class="inner">
 							<h2>Who needs Sketch?</h2>
-							<p>With the research I put in and the requirements I set out for myself, I was ready to begin. I made sure to stick closely to the three goals I set out for myself to accomplish. Initially, I wanted to design my low fidelity design using Sketch, however, I own a PC, so it was unavailable <i>(sad violin music)</i>. Being the undeterred person as I am, my next best solution was Adobe Illustrator which was painstakingly long but gave me the results I was looking for as you can see below.</p>
+							<p>With the research I put in and the requirements I set out for myself, I was ready to begin. I made sure to stick closely to the three goals I set out for myself to accomplish. Initially, I wanted to design my low fidelity design using Sketch, however, I own a PC, so it was unavailable <i>(sad violin music)</i>. Being the undeterred person as I am, my next best solution was Adobe Illustrator which was painstakingly long but gave me the results I was looking for.</p>
 						<span class="image fit"><img src="images/lowfidelity.jpg" alt="" /></span>
 						<div class="spotlight style1">
 							<p>For navigation, I opted for 3 selective views: pinpoint map, ticket submission - students | ticket reviews - admins, simple user settings
@@ -199,9 +199,9 @@
 						<span class="image fit"><img src="images/onboarding.png" alt="" /></span>
 							<div class="spotlight style1">
 							<p>
-								The login screen is very simple and has a picture of our logo (mend) on it. I went for a basic design because I don’t want to scare users into believing that the app is difficult to use. 
+								The login screen is very simple and has a picture of our logo (mend) on it. I went for a simplistic design to maximize user friendliness. 
 								<br></br>
-								Moving on, I created an easy signup page that can help differentiate between the students and administrators by asking who they are and to input their ID. I asked for their ID in order to deter students from falsifying their identities and making fake tickets since they can be immediately identified by administration.
+								The signup page differentiates between students and administrators by asking them to input their ID. This can also prevent the falsification of identities and fake tickets as they can be immediately identified by administration.
 								<br></br>
 								Firebase will verify and approve of all credentials during signup while the user is being shown a nice loading animation before being taken to the map interface. If there is something invalid, they will be redirected back to the signup page.
 							</p>
@@ -219,7 +219,7 @@
 							<p>
 								We’ll start off with the <b>Student UI</b> first. Students are introduced to a map that displays their current location and allows them to search a location of which a repair or maintenance is required.
 								<br></br>
-								The pinpoints on the map represent the tickets for areas on campus. These pinpoints will represent two colors (red being In Progress, green meaning completed) to indicate the status of the ticket and to visualize issues that have been resolved.  
+								The pinpoints on the map represent the tickets for areas on campus. These pinpoints will represent two colors (orangey-red being in progress, green meaning completed) to indicate the status of the ticket and to visualize issues that have been resolved. The resolved tickets will slowly fade within a month after completion to be stored into a database. 
 								<br></br>
 								Students can also click on these pinpoints to view the information regarding the ticket and other details including the expected date of repair (if in progress), severity and so on. 
 								<br></br>
@@ -230,11 +230,11 @@
 							<span class="image fit"><img src="images/exploration2.png" alt="" /></span>
 							<div class="spotlight style1">
 							<p>
-								In terms of differences in <b>Administration UI</b>, we’re mainly focusing on the ticket tab. For the map, instead of a submission ticket button, they are given a review ticket button to make it more apparent. When clicked, they will be shown all tickets which can be organized accordingly using the filters. 
+								<b>Administration UI</b> mainly focuses on the ticket tab. For the map, instead of a submission ticket button, they are given a review ticket button to make it more apparent. When clicked, they will be shown all tickets which can be organized accordingly using the filters. 
 								<br></br>
-								The filters are there to keep things organized and alleviate the stress of having a bombardment of tickets. Administrators swipe left on a ticket to reveal a delete or update option. Administrators can delete tickets that are the same to another or is ineligible. The update button is for updating the status of tickets from In Progress to Complete. It can also be used vice versa for maintenance purposes where it is continuous.  
+								The filters organize the bombardment of tickets which alleviates stress. Administrators swipe left on a ticket to reveal a delete or update option. Administrators can use the delete option to remove tickets that are the same to another or is ineligible. Click the update button to instantly change ticket statuses from In Progress to Complete. It can also be used vice versa for maintenance purposes where it is continuous.  
 								<br></br>
-								Administrators can choose to resolve a ticket and can edit the information of the student’s ticket before publishing it on the map for viewing. Sometimes students can be inaccurate about a problem or give an unacceptable description of the incident which is why I allowed for administrators to edit the information before it goes public. 
+								Administrators can choose to resolve a ticket and can edit the information on the student’s ticket before publishing it on the map for viewing. Sometimes students can be inaccurate about a problem or give an unacceptable description of the incident which is why administrators are required to edit the information before it goes public. 
 								<br></br>
 								Also, if administrators have trouble finding a company to take care of the issue, I opted for administrators to use the google search engine to assist them.
 							</p>
@@ -245,13 +245,13 @@
 							<p>
 								I wanted to discuss this exclusively because it is my favorite one out of all the panels. Previously, I mentioned that when a user clicks on a pinpoint, they are introduced to all details regarding a ticket.
 								<br></br>
-								Below there is a secondary ticket option that will become available for when an issue is resolved but reoccurs. It will redirect users to the ticket submission which is nothing new but to administrators, they can recognize that this ticket is a reoccurrence. 
+								Below there is a secondary ticket option that will become available for when an issue is resolved but reoccurs. It will redirect students to the same process for submitting a ticket but administrators will recognize that this ticket is a reoccurrence. 
 								<br></br>
 								Now if you look closely you will see this huge thumbs up button which is for students’ purposes only, but administrators can upvote too. It is created for students to indirectly communicate to administrators about an issue that may be minor to them but very important to students.
 								<br></br>
-								Say, for example, water from a fountain at the gym tastes really weird. It is a minor issue but heavily affects a lot of students so by upvoting, you are telling administrators that this issue needs to be fixed <i>now</i>.
+								Say, for example, water from a fountain at the gym tastes really weird. It is a minor issue but heavily affects a lot of students so by upvoting the issue, you are telling administrators that it needs to be fixed <i>ASAP</i>.
 								<br></br>
-								Furthermore, there are icons on the top right. There is a sharing icon so students and administrators can take to social media to share with others. The bell icon is for students to receive notifications of when a ticket is being resolved and is completed.
+								Furthermore, there are icons on the top right. There is a sharing icon so students and administrators can take to social media to share with others and a bell icon for students to receive notifications of when a ticket is being resolved or has been completed.
 							</p>
 							</div>
 						</div>
@@ -262,14 +262,14 @@
 				<section class="wrapper style1 align-left">
 						<div class="inner">
 						<h2>High Fidelity</h2>
-						<p>I have chosen three specific panels to do a high-fidelity design on because I believe it can communicate the app thoroughly  and can address the necessary look and feel of the app.
+						<p>I have chosen three specific panels to do a high-fidelity design on because I believe it can communicate the app thoroughly and can address the necessary look and feel of the app.
 						Below you can see I opted the app to be the color of green because it is a sign of health and positivity. I think it works well with repairs and maintenance because you’re restoring things back to their original state of higher quality. 
 						</p>
 						<span class="image fit"><img src="images/together.jpg" alt="" /></span>
 							
 							<p>
 								<h3>The Map</h3>
-								For the map, you can see the pinpoints of the color orangey red and green which I mentioned before, represents the status of the issue. I wanted the map to be a light color to easily find the pinpoints on the map as well as make it easier on the eyes.
+								For the map, you can see the pinpoints of the color orangey-red and green which I mentioned before, represents the status of the issue. I wanted the map to be a light color to easily find the pinpoints on the map as well as make it easier on the eyes.
 								The map itself is movable by swiping around and can be zoomed out or in by pinching the screen outward and inward. 
 								<br></br>
 								<h3>The Ticket</h3>
