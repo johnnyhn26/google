@@ -20,7 +20,7 @@
 					<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Google Design Exercise</h1>
-							Hello everyone! I would like to present to you my solution to a design exercise provided by Google. I picked the exercise that I thought would allow me to best demonstrate my skills and would have the most enjoyable experience in completing. Without further ado, let us begin!</p>
+							Hello everyone! I would like to present to you my solution to a design exercise provided by Google. I picked the exercise that I thought would allow me to best demonstrate my skills and would have the most enjoyable experience in completing. Without further ado, let's begin!</p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Onward!</a></li>
 							</ul>
@@ -45,7 +45,7 @@
 					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>The start of my journey</h2>
-							<p>When first approaching this exercise, I thought it would be a good idea to organize my thoughts and ideas while tackling this problem. I researched the current maintenance and repair system for universities and realized that the tactics used eons ago are still used now. That most popular tactic being you, the student, calling in and reporting the issue to administrative staff. Afterward, you simply wait with no feedback whatsoever.  FYI, the wait is VERY long.</p>
+							<p>When first approaching this exercise, I thought it would be a good idea to organize my thoughts and ideas while tackling this problem. I researched the current maintenance and repair system for universities and realized that the tactics used now are still outdated. The most popular tactic being students calling in and reporting the issue to administrative staff only to wait an <i>eternity</i> with no feedback.</p>
 						</div>
 						<div class="image">
 							<img src="images/mendpin.gif" alt="" />
@@ -58,7 +58,7 @@
 						<div class="inner">
 							<h2>So, what is the problem?</h2>
 
-							<p>I realized the only way for you to measure the success of your report was to simply wait and see if what you wanted to be fixed or maintained hopefully happened. Clearly, this was not an effective way to update users reporting the tickets. I questioned why that was the case and that helped me discover additional pain points that I have outlined below. Moreover, I have also begun adding in the type of UI and the type of google products I would like to integrate.</p>
+							<p>I realized the only way for you to measure the success of your report was to simply wait and see if what you wanted to be fixed or maintained hopefully happened. This was not an effective way to update users reporting the tickets which made me question why that was the case. I decided to delve deeper to see if I can uncover any additional pain points that were either unique or similar so I could group them. Once that was done, I wrote down the information along with the type of UI I am interested in incorporating and the type of google products I would like to integrate.</p>
 
 							<div class="items style1 medium onscroll-fade-in">
 
@@ -158,14 +158,14 @@
 							<h2>How do I fix this?</h2>
 							<p>From my brainstorm of thoughts and ideas, I summarized the pain points I wanted to focus on into three distinct goals that I would like to achieve.
 							<br></br>
-							The goals being:
+							The goals:
 							<ul>
 								<li>Alleviate inefficient and time-consuming ticket queues</li>
 								<li>Minimize repetitive tickets to reduce queue overload</li>
 								<li>Continuously update users and admins on repairs and maintenances while keeping them clear and concise</li>
 							</ul>
 
-							Now that it is out of the way, it’s time to design my app.
+							Now that the goals and research are finished, it’s time to design the app <i>(dun dun dun)</i>
 							</p>
 
 						</div>
@@ -176,14 +176,14 @@
 					<section class="wrapper style1 align-center ">
 						<div class="inner">
 							<h2>Who needs Sketch?</h2>
-							<p>With the research I put in and the requirements I set out for myself, I was ready to begin. I made sure to stick closely to the three goals I set out for myself to accomplish. Initially, I wanted to design my low fidelity design using Sketch, however, I own a PC, so it was unavailable <i>(sad violin music)</i>. Being the undeterred person as I am, my next best solution was Adobe Illustrator which was painstakingly long but gave me the results I was looking for.</p>
+							<p>With the research and requirements clearly outlined, I was ready to begin. I made sure to stick closely to the three goals I set out for myself to accomplish as I was designing my application. Initially, I wanted to design my low fidelity design using Sketch, however, I own a PC, so it was unavailable <i>(sad violin music)</i> Being the undeterred person as I am, my next best solution was Adobe Illustrator which was painstakingly long but gave me the results I was looking for.</p>
 						<span class="image fit"><img src="images/lowfidelity.jpg" alt="" /></span>
 						<div class="spotlight style1">
-							<p>For navigation, I opted for 3 selective views: pinpoint map, ticket submission - students | ticket reviews - admins, simple user settings
+							<p>For navigation, I opted for 3 selective views: pinpoint map, ticket submission or reviews (depending on the user) and user settings
 							<br></br>
-							Besides the ticket submission tab, I kept the other tabs as close as possible to each other because I felt that both parties should have the same easy experience. Also, implementation can be quite painful when it feels like there are two apps in one. 
+							Besides the ticket submission tab, I kept the other tabs as similar as possible because I felt that both parties should have the same simple experience. Also, implementation can be quite painful when it feels like there are two apps in one. 
 							<br></br>
-							For filing and receiving the report, I tried to make the fill out form straightforward and clear as possible to cover all various incidents of repair and maintenance. I also request users to attach images because in my experience, visuals are always helpful in understanding a problem.
+							For filing and receiving the report, I tried to make the fill out form straightforward and clear  to cover all various incidents of repair and maintenance. I also requested users to attach images because in my experience, visuals are always helpful in understanding a problem.
 							<br></br>
 							Now we move onto the meat and potatoes of user flow:
 							</p>
@@ -199,11 +199,11 @@
 						<span class="image fit"><img src="images/onboarding.png" alt="" /></span>
 							<div class="spotlight style1">
 							<p>
-								The login screen is very simple and has a picture of our logo (mend) on it. I went for a simplistic design to maximize user-friendliness. 
+								The login screen is very simple and has a picture of the <b>mend</b> logo on it which is quite simple. I did this purpose in order to maximize user-friendliness. 
 								<br></br>
-								The signup page differentiates between students and administrators by asking them to input their ID. This can also prevent the falsification of identities and fake tickets as they can be immediately identified by administration.
+								The signup page differentiates between students and administrators by asking them to input their ID on top of selecting their role. By requesting their ID, it can prevent the falsification of identities and fake tickets as they can be immediately identified by administration.
 								<br></br>
-								Firebase will verify and approve of all credentials during signup while the user is being shown a nice loading animation before being taken to the map interface. If there is something invalid, they will be redirected back to the signup page.
+								Google Firebase will verify and approve all credentials during the signup phase as users are shown a nice loading animation before being taken to the map interface. If there is something invalid with their information, they will be redirected back to the signup page.
 							</p>
 							</div>
 						</div>
@@ -217,26 +217,26 @@
 						<span class="image fit"><img src="images/exploration1.png" alt="" /></span>
 							<div class="spotlight style1">
 							<p>
-								We’ll start off with the <b>Student UI</b> first. Students are introduced to a map that displays their current location and allows them to search a location of which a repair or maintenance is required.
+								For the <b>Student UI</b>, they are introduced to a map that displays their current location and allows them to search for an area of which a repair or maintenance is required.
 								<br></br>
-								The pinpoints on the map represent the tickets for areas on campus. These pinpoints will represent two colors (orangey-red being in progress, green meaning completed) to indicate the status of the ticket and to visualize issues that have been resolved. The resolved tickets will slowly fade within a month after completion to be stored into a database. 
+								The pinpoints on the map represent the tickets that have been filed. These pinpoints will represent two colors <i>(orange-red = in progress, green = completed)</i> to indicate the status of the ticket and to visualize issues that have been resolved. The resolved tickets will slowly fade within a month after completion to be stored into a database. 
 								<br></br>
-								Students can also click on these pinpoints to view the information regarding the ticket and other details including the expected date of repair (if in progress), severity and so on. 
+								Students can also click on these pinpoints to view the information regarding the ticket including the expected date of repair (if in progress), severity and other details.
 								<br></br>
-								Moreover, a button is available next to their location on the map to make it straightforward for students to file a report. Once a report has been submitted, they are directed to a confirmation that their ticket has been submitted and directed back to the map. If their ticket has been accepted for repair or maintenance, it will be notified to the issuer and anyone who clicked the bell icon when viewing the ticket.
+								Moreover, a button is available next to their location on the map to make it straightforward for students to file a report. Once a report has been submitted, they are directed to a confirmation message that their ticket has been submitted and will directed back to the map. If their ticket has been accepted for repair or maintenance, they will be notified of the date and when it is completed.
 							</p>
 							</div>
 
 							<span class="image fit"><img src="images/exploration2.png" alt="" /></span>
 							<div class="spotlight style1">
 							<p>
-								<b>Administration UI</b> mainly focuses on the ticket tab. For the map, instead of a submission ticket button, they are given a review ticket button to make it more apparent. When clicked, they will be shown all tickets which can be organized accordingly using the filters. 
+								<b>Administration UI</b> mainly focuses on the ticket tab. For the map, instead of a submission ticket button, they are given a review button to analyze tickets. When clicked, they will be shown all tickets which can be organized accordingly using the filters. 
 								<br></br>
-								The filters organize the bombardment of tickets which alleviates stress. Administrators swipe left on a ticket to reveal a delete or update option. Administrators can use the delete option to remove tickets that are the same to another or is ineligible. Click the update button to instantly change ticket statuses from In Progress to Complete. It can also be used vice versa for maintenance purposes where it is continuous.  
+								The filters organize the bombardment of tickets which alleviates stress. Administrators swipe left on a ticket to reveal a delete or update button. Administrators can use the delete button to remove any tickets that are similar or ineligible. On the other hand, the update button instantly changes ticket statuses from In Progress to Complete. It can also be done vice versa for maintenance purposes where it is continuous.  
 								<br></br>
-								Administrators can choose to resolve a ticket and can edit the information on the student’s ticket before publishing it on the map for viewing. Sometimes students can be inaccurate about a problem or give an unacceptable description of the incident which is why administrators are required to edit the information before it goes public. 
+								Administrators can also resolve a ticket and can edit the information on the student’s ticket before publishing it on the map for viewing. This is to avoid the possibility of inaccurate information or inappropriate descriptions being released to the public.
 								<br></br>
-								Also, if administrators have trouble finding a company to take care of the issue, I opted for administrators to use the google search engine to assist them.
+								Lastly, if administrators have trouble finding a suitable company to resolve the issue, I opted for administrators to use the google search engine to assist them.
 							</p>
 							</div>
 
@@ -247,9 +247,9 @@
 								<br></br>
 								Below there is a secondary ticket option that will become available for when an issue is resolved but reoccurs. It will redirect students to the same process for submitting a ticket but administrators will recognize that this ticket is a reoccurrence. 
 								<br></br>
-								Now if you look closely you will see this huge thumbs up button which is for student purposes only, but administrators can upvote too. This function allows students to bring awareness to the issues that may seem minor to administrators but very important to students.
+								Now if you look closely you will see a huge thumbs up button which is for student purposes only, however, administrators can use it too. This function allows students to bring awareness to the issues that may seem minor to administrators but very important to students.
 								<br></br>
-								For example, water from a fountain at the gym tastes really weird. It is a minor issue but heavily affects a lot of students so by upvoting the issue, you are telling administrators that it needs to be fixed <i>ASAP</i>.
+								For example, water from a fountain at the gym tastes <i>really weird</i> so a report is filed. It is considered a minor issue but heavily affects a lot of students so upvoting the issue will tell administrators that it needs to be fixed <i>ASAP</i>.
 								<br></br>
 								Furthermore, there are icons on the top right. There is a sharing icon so students and administrators can take to social media to share with others and a bell icon for students to receive notifications of when a ticket is being resolved or has been completed.
 							</p>
@@ -268,32 +268,29 @@
 							
 							<p>
 								<h3>The Map</h3>
-								You can see the pinpoints of the color orange-red and green, which represents the status of the issue. I wanted the map to be a light color to easily find the pinpoints on the map as well as make it easier on the eyes.
-								The map itself is movable by swiping around and can be zoomed out or in by pinching the screen outward and inward. 
+								You can see the pinpoints of the color orange-red and green, which represents the status of the issue. I wanted the map to be a light color to easily find the pinpoints on the map as well as make it easier on the eyes. The map itself is movable by swiping around and can be zoomed in or out by pinching the screen.
 								<br></br>
 								<h3>The Ticket</h3>
-								The most boring yet important one is the ticket which displays all core information for a report to be filed and resolved. 
-								Everything is clearly outlined for users to comprehend and allows users to fill out all necessary information quickly and effectively.
+								The most boring yet important one is the ticket which displays all core information for a report to be filed and resolved. Everything is clearly outlined for users fill out the necessary information in an efficient manner.
 								<br></br>
 								<h3>The Pinpoint Details</h3>
-								The pinpoint details display pictures of what the current issue is and can help to visualize it more clearly.
-								All basic details are highlighted below the images and if users cannot depict the issue through visuals, there is a description below for them to read. The goal is to inform other students about this issue and allow administrators to easily refer back to the issue. FYI, I made the phone elongated to fit everything (no phone like that exists).
+								The pinpoint details display pictures of what the current issue is and can help for visualization. All basic details are highlighted below the images and a description is provided for them to read. The goal is to inform other students and allow administrators to easily refer back to the issue. FYI, the phone was elongated to fit everything (no phone like that exists).
 							</p>	
 				</section>
 
 				<!-- Somebody call nine one one -->
 				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>The final countdown but what's next?</h2>
-							Overall, I believe my application modernizes the reporting system of post-secondary institutions and can be expanded onto other infracstructures. I definitely believe my app can be made more efficient and should focus more on the communication aspect since it can still be lost in queue. 
+							<h2>It's the final countdown but what's next?</h2>
+							Overall, I believe my application modernizes the reporting system of post-secondary institutions and can be expanded onto other infrastructures. I believe my app can be made more efficient and should focus more on the communication aspect since it can still be lost in the queue. 
 							<br></br>
-							If I had more time to execute this application, I would focus on integrating Google’s cloud storage to create a database that stores all tickets that were completed which I lightly touched upon. This can reduce repetitive tickets even further and give administrators better control of information over the problems that students experience on campus facilities.
+							If I had more time to execute this application, I would focus on integrating Google’s cloud storage to create a database that stores all tickets that were completed which I lightly touched upon. This can reduce repetitive tickets even further and give administrators better control of information over the problems that students experience on-campus facilities.
 							<br></br>
-							For the future, I would like to leverage Google’s A.I. capabilities to instantly assess an issue through visuals and descriptions to have it write down an instant report that is automatically sent to administrators to resolve.
+							For the future, I would like to leverage Google’s A.I. capabilities to assess an issue from the visuals and descriptions of a situation to write an instant report that is sent to administrators to resolve.
 							<br></br>
-							But of course, these ideas take a lot of time and thought before it can be executed to perfection. As the saying goes for my app, you can only mend things one step at a time.
+							But of course, these ideas take a lot of time and thought before it can be executed to perfection. As the saying goes for mend, you can only mend things one step at a time.
 							<br></br>
-							<h3>Thanks for sticking around!</h3>
+							<h3>Thanks for sticking around!</h3>  
 						</div>
 					</section>
 
